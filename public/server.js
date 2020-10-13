@@ -21,6 +21,6 @@ app.use('/js', express.static(__dirname +'/js'));
 app.use('/node_modules', express.static(__dirname +'/node_modules'));
 
 
-app.listen(3000, function () {
+app.listen(process.env.PORT|| 3000, function () {
     console.log('Listening on port: 3000!');
 });
