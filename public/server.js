@@ -1,6 +1,13 @@
 const express = require('express');
 const path = require('path');
 
+var techcrunch=require('./src/techcrunch');
+var coursera=require('./src/coursera');
+var myteam=require('./src/myteam');
+var slide=require('./src/slide');
+var intrestingEngineering=require('./src/intrestingEngineering');
+var courserareview=require('./src/courserareview');
+
 const app = express();
 
 app.get('/', function(req, res) {
